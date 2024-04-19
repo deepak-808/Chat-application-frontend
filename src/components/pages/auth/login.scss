@@ -1,0 +1,66 @@
+.flex {
+  display: flex;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.md\:bg-gradient-to-r {
+  @media (min-width: 768px) {
+    background-image: linear-gradient(to right, var(--sky), var(--indigo-500));
+  }
+}
+
+.bg-sky-gradient {
+  background-color: #60a5fa;
+}
+
+.bg-indigo-gradient {
+  background-color: #818cf8;
+}
+
+.login-container {
+  @extend .flex;
+  @extend .h-screen;
+  @extend .md\:bg-gradient-to-r;
+}
+
+
+.login-form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  background-color: var(--white); 
+  justify-content: center;
+  width: 100%; 
+
+  @media (min-width: 640px) {
+    width: 100%; 
+  }
+
+  @media (min-width: 768px) {
+    width: 33.333333%;
+  }
+
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.form-input{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+.forgot-password{
+  margin: 4px 0 16px auto;
+}
+.submit-button {
+  background-image: linear-gradient(to right, var(--sky), var(--indigo-500));
+  color: var(--white);
+  border-radius: 40px;
+  border: 1px solid;
+}
+
+// flex flex-col mx-auto w-full
